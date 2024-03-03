@@ -1,0 +1,23 @@
+output:
+  bindings_type: dart_only
+  dart:
+    path: 'lib/src/third_party/'
+
+maven_downloads:
+  source_deps:
+    - 'com.squareup.okhttp3:okhttp:3.14.9'
+  jar_only_deps:
+    - 'com.google.code.findbugs:jsr305:3.0.2'
+    - 'org.codehaus.mojo:animal-sniffer-annotations:1.17'
+    - 'com.squareup.okio:okio:1.17.2'
+
+classes:
+  - 'okhttp3.OkHttpClient'
+  - 'okhttp3.Request'
+  - 'okhttp3.Response'
+  - 'okhttp3.Headers'
+  - 'okhttp3.Call'
+  - 'okhttp3.ResponseBody'
+  - 'okhttp3.RequestBody'
+  - 'okhttp3.MediaType'
+  - 'okio.BufferedSource'
