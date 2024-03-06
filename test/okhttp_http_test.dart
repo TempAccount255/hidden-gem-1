@@ -4,13 +4,6 @@ import 'package:test/test.dart';
 
 void main() {
   group('okhttp client conformance tests', () {
-    testIsolate(OkhttpClient.new);
-    testResponseBody(OkhttpClient());
-    testResponseBodyStreamed(OkhttpClient());
-    testResponseHeaders(OkhttpClient());
-    testResponseStatusLine(OkhttpClient());
-    testRequestBody(OkhttpClient());
-    testRequestHeaders(OkhttpClient());
-    testMultipleClients(OkhttpClient.new);
+    testAll(OkhttpClient.new);
   });
 }
