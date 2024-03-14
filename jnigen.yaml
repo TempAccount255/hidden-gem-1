@@ -1,4 +1,5 @@
 # Regenerate bindings with `dart run jnigen --config jnigen.yaml`.
+# build native libraries `dart run jni:setup`.
 output:
   bindings_type: dart_only
   dart:
